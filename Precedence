@@ -1,0 +1,67 @@
+/* =========================================================
+           C OPERATOR PRECEDENCE (SHORT NOTES)
+========================================================= */
+
+/*
+1  -> () [] . -> x++ x--
+      Function call, array, postfix
+
+2  -> ++x --x +x -x ! ~ (type) * & sizeof
+      Unary operators
+
+3  -> * / %
+      Multiply, divide, modulus
+
+4  -> + -
+      Addition, subtraction
+
+5  -> << >>
+      Left shift, right shift
+
+6  -> < <= > >=
+      Relational operators
+
+7  -> == !=
+      Equality operators
+
+8  -> &
+      Bitwise AND
+
+9  -> ^
+      Bitwise XOR
+
+10 -> |
+      Bitwise OR
+
+11 -> &&
+      Logical AND
+
+12 -> ||
+      Logical OR
+
+13 -> ?:
+      Ternary operator
+
+14 -> = += -= *= /= %= &= ^= |= <<= >>=
+      Assignment operators
+
+15 -> ,
+      Comma operator
+*/
+
+
+/* =========================================================
+   EASY MEMORY FLOW
+
+   Postfix
+   Unary
+   Math
+   Shift
+   Compare
+   Equality
+   Bitwise
+   Logical
+   Ternary
+   Assignment
+   Comma
+========================================================= */
