@@ -1,0 +1,16 @@
+-------------------------------------------
+-----Storage classes in C language --------
+-------------------------------------------
+ -> auto 
+ -> register 
+ -> static
+ -> extern 
+
+
+-------------1. auto-----------
+.Storage - Stack
+.Initial value - garbage
+.Scope - within block 
+.Life time - end of block 
+.only used for local variables
+

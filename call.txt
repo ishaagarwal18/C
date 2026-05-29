@@ -1,0 +1,77 @@
+FROM WRITING TO RUNNING
+
+CALL-> Compiler Assembler Linked Loader
+
+The Compilation System in C
+
+1. Source Program
+-----------------
+File: hello.c
+Type: Source code (text)
+
+        ↓
+
+2. Preprocessor (cpp)
+---------------------
+Input : hello.c
+Output: hello.i
+
+Work:
+- Expands header files (#include)
+- Replaces macros (#define)
+- Removes comments
+
+Output Type:
+Modified source program (text)
+
+        ↓
+
+3. Compiler (cc1)
+-----------------
+Input : hello.i
+Output: hello.s
+
+Work:
+- Converts C code into Assembly language
+
+Output Type:
+Assembly program (text)
+
+        ↓
+
+4. Assembler (as)
+-----------------
+Input : hello.s
+Output: hello.o
+
+Work:
+- Converts assembly code into machine code
+
+Output Type:
+Relocatable object program (binary)
+
+        ↓
+
+5. Linker (ld)
+--------------
+Input :
+- hello.o
+- printf.o (library/object files)
+
+Output:
+hello
+
+Work:
+- Links required library files
+- Creates executable program
+
+Output Type:
+Executable object program (binary)
+
+
+Their are 3 parts of memory : Stack, heap and static 
+static is further deivided into 2 parts : Data segment and code segment. 
+
+The Stack -> This is where local varaibles and function activation recirds are stored. Size changes at runtime 
+The Heap -> This is where dynamically allocated data is stored. Size changes at runtime 
+The static area -> This is where statically declared data(static and global variables) and code is stored. Size is fixed at runtime.
