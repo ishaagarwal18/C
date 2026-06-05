@@ -41,3 +41,6 @@
 .Scope - Global
 .Life time - Till end of the program 
 .Objects with the extern class are available to the Linker
+(Common practice is to place definitions of all enternal 
+varaibles at the beginning of source file and them 
+omit all the extern declarations )
