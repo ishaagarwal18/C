@@ -1,12 +1,13 @@
 -------------------------------------------
 -----Storage classes in C language --------
 -------------------------------------------
- -> auto 
- -> register 
+ -> auto                }Local variables
+ -> register            }Local varaibles
  -> static
  -> extern 
 
 
+(you can't use auto and register for global variables)
 -------------1. auto-----------
 .Storage - Stack
 .Initial value - garbage
@@ -14,3 +15,29 @@
 .Life time - end of block 
 .only used for local variables
 
+. The auto storage class is the default storage class for all local varaibles
+. Objects with the auto class are NOT available to the Linker
+
+-------------2. Register----------
+(Same as auto)
+.Storage - Stack
+.Initial value - garbage
+.Scope - within block 
+.Life time - end of block 
+
+
+------------3. Static----------------
+.Storage - Static memory 
+.Initial value - Zero
+.Scope - within block 
+.Life time - Till end of the program 
+.Objects with the static class are also NOT available to the Linker
+
+
+
+------------4. Extern----------------
+.Storage - Static memory 
+.Initial value - Zero
+.Scope - Global
+.Life time - Till end of the program 
+.Objects with the extern class are available to the Linker
