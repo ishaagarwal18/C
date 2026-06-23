@@ -1,0 +1,11 @@
+_______________________________________________
+|   a[0]  |  a[1]  |  a[2]  |  a[3]  |  a[4]  |
+_______________________________________________
+    1000    1004    1008       1012     1016    <- address of each cell 
+
+
+a[i] - 
+    . a represents address of first element in array 
+    . a+0 represents address of first element in array
+    . a+1 represents address of second element in array
+    . a[i] is same as *(a+i)
