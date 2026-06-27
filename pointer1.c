@@ -32,16 +32,27 @@
 //     }
 // }
 
-#include <stdio.h>
+// #include <stdio.h>
 
 int main()
 {
-    int a[] = {1,2,3,4,5};
-    int *p = a;
+    // int a[] = {1,2,3,4,5};
+    // int *p = a;
+
+    // printf("p = %u\n", p);
+    // printf("p+1 = %u\n", p+1);
+
+    // printf("*p = %u\n", *p);
+    // printf("*(p+1) = %u\n", *(p+1));
+
+    char s[] = "abcdefgh";
+
+    char *t = s;
+    int *p = s;      // Not recommended
+
+    printf("t = %u\n", t);
+    printf("t+1 = %u\n", t+1);
 
     printf("p = %u\n", p);
     printf("p+1 = %u\n", p+1);
-
-    printf("*p = %u\n", *p);
-    printf("*(p+1) = %u\n", *(p+1));
 }
