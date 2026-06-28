@@ -35,15 +35,24 @@
 
 
 
-int main() {
-    int arr[] = {3,5,6,7,9};
-    int *p = arr;
-    int (*ptr)[5] = &arr;
-    printf("p = %d\n", *p);
-    printf("ptr[0][3] = %d\n", ptr[0][3]);
-    printf("sizeof(p) = %d\n", sizeof(p));
-    printf("sizeof(*p) = %d\n", sizeof(*p));
-    printf("sizeof(ptr) = %d\n", sizeof(ptr));
-    printf("sizeof(*ptr) = %d\n", sizeof(*ptr));
-    return 0;
+// int main() {
+//     int arr[] = {3,5,6,7,9};
+//     int *p = arr;
+//     int (*ptr)[5] = &arr;
+//     printf("p = %d\n", *p);
+//     printf("ptr[0][3] = %d\n", ptr[0][3]);
+//     printf("sizeof(p) = %d\n", sizeof(p));
+//     printf("sizeof(*p) = %d\n", sizeof(*p));
+//     printf("sizeof(ptr) = %d\n", sizeof(ptr));
+//     printf("sizeof(*ptr) = %d\n", sizeof(*ptr));
+//     return 0;
+// } 
+
+int main()
+{
+    int (*a)[2];
+    int arr[4][4]={1,2,3,4,5,6,7,8};
+    a=arr;
+    ++a;
+    printf("%d",**a);
 }
