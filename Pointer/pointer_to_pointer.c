@@ -61,3 +61,22 @@
 // printf("%d",*q);}
 
 
+int main()
+{
+    int a = 4;
+int b = 6;
+int c = 9;
+
+int *p = &a;
+int *q = p;
+
+p = &b;
+
+a++;
+
+(*q)++;
+
+b = *q * 2;
+
+c = *q + *p;
+}
