@@ -23,28 +23,41 @@
 // }
 
 
-int f(int x, int *py, int **ppz)
-{
-    int y, z;
+// int f(int x, int *py, int **ppz)
+// {
+//     int y, z;
 
-    **ppz += 1;
-    z = **ppz;
+//     **ppz += 1;
+//     z = **ppz;
 
-    *py += 2;
-    y = *py;
+//     *py += 2;
+//     y = *py;
 
-    x += 3;
+//     x += 3;
 
-    return x + y + z;
-}
+//     return x + y + z;
+// }
 
-void main()
-{
-    int c, *b, **a;
+// void main()
+// {
+//     int c, *b, **a;
 
-    c = 4;
-    b = &c;
-    a = &b;
+//     c = 4;
+//     b = &c;
+//     a = &b;
 
-    printf("%d", f(c, b, a));
-}
+//     printf("%d", f(c, b, a));
+// }
+
+
+// void inc_prt(int **h)
+// {
+//     *h=*h+1;
+// }
+// int main()
+// {int a[3]={50,60,70};
+// int *q=a;
+// inc_prt(&q);
+// printf("%d",*q);}
+
+
