@@ -1,4 +1,4 @@
-// #include <stdio.h>
+#include <stdio.h>
 // void main()
 // {
 //     char *p = "UNIVERSSITY";
@@ -57,20 +57,35 @@
 // }
 
 
+// #include <stdio.h>
+// int *confuse(int *x, int *y)
+// {
+//     (*y)++;
+//     y = x;
+//     *y = 10;
+//     return y;
+// }
+// int main(void)
+// {
+//     int a = 6, b = 7;
+//     int *f = &b;
+//     f = confuse(&a, &b);
+//     (*f)++;
+//     printf("a = %d and b = %d\n", a, b);
+//     return 0;
+// }
+
+
 #include <stdio.h>
-int *confuse(int *x, int *y)
+int main()
 {
-    (*y)++;
-    y = x;
-    *y = 10;
-    return y;
-}
-int main(void)
-{
-    int a = 6, b = 7;
-    int *f = &b;
-    f = confuse(&a, &b);
-    (*f)++;
-    printf("a = %d and b = %d\n", a, b);
+    int *pv, v[] = {1, 4, 7, 10, 13, 16, 19};
+    char *pc, c[] = "FEDCBA";
+    pv = v + 4;
+    printf("%d\n", (*pv)++);
+    printf("%d\n", ++*pv);
+    pv = v;
+    printf("%d\n", *++pv);
+    printf("%d\n", pv[1]);
     return 0;
 }
