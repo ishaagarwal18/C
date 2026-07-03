@@ -1,0 +1,18 @@
+malloc(40);
+
+. malloc() doesn't know how you are going to use this memory 
+. for example if we ask for 40 bytes then you may store
+        1. 40 characters
+        2. 10 integers
+        3. 5 integers 20 characters
+        4. 5 doubles 
+. return type of malloc is void 
+
+. malloc funtion returns the void type pointer, we can yse that w/o typecast
+. malloc returns the void* bcoz, malloc doesn't know for what purpose this memory is being used.
+. on fail, malloc returns NULL 
+
+ 
+free(p)->it is a way to tell OS that we(programmer) don't need the memory pointer to p 
+after free(p) if we doo *p the program may crash.
+we can print p but not *p
